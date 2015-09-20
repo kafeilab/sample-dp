@@ -61,7 +61,7 @@ namespace Structural_Decorator_Proxy_Bridge.decorator
 
             public string AddedBehavior()
             {
-                return "and I bought a cappuccino";
+                return " and I bought a cappuccino";
             }
         }
 
