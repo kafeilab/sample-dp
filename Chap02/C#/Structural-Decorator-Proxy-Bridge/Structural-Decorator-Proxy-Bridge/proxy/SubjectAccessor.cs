@@ -14,6 +14,12 @@ using System.Threading.Tasks;
 // - Authentication proxies: Checks that the access permissions for a request are correct
 // - Remote proxies: Encodes requests and send them across a network
 // - Smart proxies: Adds to or change requests before sending them on
+
+// DESIGN
+// ISubject : A common interface for subjects and proxies that enables them to be used interchangeably
+// Subject: The class that a proxy represents
+// Proxy: A class that creates, controls, enhances, and authenticates access to a subject
+// Request: An operation on the subject that is routed via a proxy
 namespace Structural_Decorator_Proxy_Bridge.proxy
 {
     class SubjectAccessor

@@ -10,6 +10,12 @@ namespace Structural_Decorator_Proxy_Bridge.decorator
     // and behavior to an object dynamically. A key implementation point in the
     // Decorator pattern is that decorators both inherit the original class and 
     // contain an instantiation of it.
+
+    // DESIGN
+    // Component: An original class of objects that can have operations added or modified
+    // Operation: An operation in IComponent objects that can be replaced
+    // IComponent: The interface that identifies the classes of objects that can be decorated
+    // Decorator: A class that conforms to the IComponent interface and adds state and/or behavior
     class DecoratorPattern
     {
 
@@ -17,7 +23,7 @@ namespace Structural_Decorator_Proxy_Bridge.decorator
         {
             string Operation();
         }
-
+        
         class Component : IComponent
         {
             public string Operation()
